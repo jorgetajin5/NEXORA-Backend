@@ -1,4 +1,11 @@
 # =========================
+# Variables de entorno
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
 # Dependencias
 # =========================
 node_modules/
@@ -6,58 +13,11 @@ node_modules/
 # =========================
 # Logs
 # =========================
-logs
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
 
 # =========================
-# Secretos y Entorno 
-# =========================
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-*.pem
-*.key
-
-# =========================
-# Compilación y Builds
-# =========================
-dist/
-build/
-out/
-
-# =========================
-# Testing y Cobertura
-# =========================
-coverage/
-.nyc_output/
-
-# =========================
-# Cachés de herramientas
-# =========================
-.npm
-.eslintcache
-.node_repl_history
-
-# =========================
-# Sistemas Operativos
+# Sistema
 # =========================
 .DS_Store
 Thumbs.db
-ehthumbs.db
-
-# =========================
-# Entornos y Editores (IDEs)
-# =========================
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.idea/
-*.swp
